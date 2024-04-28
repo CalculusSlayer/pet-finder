@@ -1,0 +1,64 @@
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000; /* Match the background to the design */
+  font-family: 'Arial', sans-serif; /* Ensure a consistent font */
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  background: #000;
+  color: #FFF;
+  padding: 40px; /* Added padding for better spacing */
+  border-radius: 10px; /* Rounded corners for the form */
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2); /* Subtle white glow */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Space out each form group */
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  color: #FFF;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #222; /* Dark input fields for contrast */
+  color: #FFF;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 20px; /* Space above the button */
+  border: none;
+  border-radius: 5px;
+  background-color: #FFF;
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #e1e1e1; /* Light grey background on hover */
+}
