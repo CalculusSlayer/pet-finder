@@ -1,4 +1,5 @@
-import logo from './_MG_7939 copy.CR2';
+import React from 'react';
+import logo from './_MG_7939 copy.jpg';
 import './App.css';
 
 function App() {
@@ -6,8 +7,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <img src={logo} className="App-logo" alt="logo" />
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
         <p>
-          Click <code>below</code> for something awesome.
+          pet-finder 9000 (other 8999 versions failed)
         </p>
         <a
           className="App-link"
@@ -15,7 +20,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          gamer moment click here
+          Please visit our sister website
         </a>
       </header>
     </div>
