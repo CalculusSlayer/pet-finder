@@ -10,25 +10,24 @@ function Post() {
   }, [postSlug]);
 
   return (
-    <div className="home">
-      <div class="container">
-        <h1 className="mt-5">Swim Shady</h1>
-        <img
-              className="img-fluid rounded mb-4 mb-lg-0 mx-auto d-block"
-              src={newImage}
-              alt=""
-              style={{ maxWidth: '100%' }}
-            />
-        <h6 className="mb-5">The post slug is, {postSlug}</h6>
-        <p>
-          Fishy fishy fish
-        </p>
-        <p>
-          blub blub blub.
-        </p>
-        <p>
+    <div className="text-center">
+      <div className="home">
+        <div class="container">
+          <h1 className="mt-5">Swim Shady</h1>
+          <img
+                className="img-fluid rounded mb-4 mb-lg-0 mx-auto d-block"
+                src={newImage}
+                alt=""
+                style={{ maxWidth: '100%' }}
+              />
+          <h6 className="mb-5">The post slug is, {postSlug}</h6>
+          <p>
           splish splash sploosh.
-        </p>
+          </p>
+          <p>
+            blub blub blub.
+          </p>
+        </div>
       </div>
     </div>
   );
