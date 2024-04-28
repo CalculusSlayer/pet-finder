@@ -11,7 +11,7 @@ function Contact() {
               class="img-fluid rounded mb-4 mb-lg-0"
               src={newImage}
               alt=""
-              style={{ maxWidth: '40%' }}
+              style={{ maxWidth: '100%' }}
             />
           </div>
           <div class="col-lg-5">

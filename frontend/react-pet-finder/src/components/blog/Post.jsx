@@ -17,7 +17,7 @@ function Post() {
               className="img-fluid rounded mb-4 mb-lg-0 mx-auto d-block"
               src={newImage}
               alt=""
-              style={{ maxWidth: '20%' }}
+              style={{ maxWidth: '100%' }}
             />
         <h6 className="mb-5">The post slug is, {postSlug}</h6>
         <p>
