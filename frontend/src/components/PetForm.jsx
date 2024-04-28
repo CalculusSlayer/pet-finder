@@ -19,10 +19,24 @@ function PetForm() {
         }));
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log('Form Data:', formData);
-        // Implement further actions here, such as sending data to a server
+        // URL of the FastAPI endpoint
+        const url = 'http://127.0.0.1:8000/submit-pet';
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            });
+            const result = await response.json();
+            console.log('Server Response:', result);
+        } catch (error) {
+            console.error('Error submitting form:', error);
+        }
     };
 
     return (
@@ -97,7 +111,7 @@ function PetForm() {
                     onChange={handleChange}
                 />
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" style={{ backgroundColor: 'white', color: 'black' }}>Submit</button>
         </form>
     );
 }

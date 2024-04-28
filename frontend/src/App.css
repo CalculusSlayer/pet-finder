@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #000; /* Match the background to the design */
+  background-color: #f606a2; /* Match the background to the design */
   font-family: 'Arial', sans-serif; /* Ensure a consistent font */
 }
 
@@ -12,6 +12,18 @@ body, html {
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+
+.App {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  overflow: auto; /* Allows scrolling if the content overflows */
+  /* Other styles */
+}
+
+.App h1 {
+  padding: 1rem; /* This adds padding around the header */
 }
 
 .form-container {
